@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Technology Repair Services</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Technology Repair Services</h1>
+        <p class="subtitle">Customer Repair Request Form</p>
+
+        <h2>Customer Information</h2>
+
+        <form>
+
+            <label for="customerID">Customer ID</label>
+            <input type="text" id="customerID" name="customerID"
+                   placeholder="Example: CUST-001">
+
+            <label for="customerName">Customer Name</label>
+            <input type="text" id="customerName" name="customerName"
+                   placeholder="Enter your full name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@email.com">
+
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact"
+                   placeholder="09XXXXXXXXX">
+
+            <label for="device">Device Type</label>
+            <select id="device" name="device">
+                <option value="">-- Select Device --</option>
+                <option value="smartphone">Smartphone</option>
+                <option value="laptop">Laptop</option>
+                <option value="desktop">Desktop Computer</option>
+                <option value="tablet">Tablet</option>
+                <option value="printer">Printer</option>
+            </select>
+
+            <label for="service">Preferred Service</label>
+            <select id="service" name="service">
+                <option value="">-- Select Service --</option>
+                <option value="screen">Screen Repair</option>
+                <option value="battery">Battery Replacement</option>
+                <option value="software ">Software Repair</option>
+                <option value="hardware">Hardware Repair</option>
+                <option value="cleaning">Device Cleaning</option>
+            </select>
+
+            <label>Service Priority</label>
+
+            <div class="options">
+                <label>
+                    <input type="radio" name="priority" value="normal">
+                    Normal
+                </label>
+
+                <label>
+                    <input type="radio" name="priority" value="urgent">
+                    Urgent
+                </label>
+
+                <label>
+                    <input type="radio" name="priority" value="emergency">
+                    Emergency
+                </label>
+            </div>
+
+            <label>Additional Services</label>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox" name="cleaning">
+                    Cleaning
+                </label>
+
+                <label>
+                    <input type="checkbox" name="backup">
+                    Data Backup
+                </label>
+
+                <label>
+                    <input type="checkbox" name="diagnostic">
+                    Full Diagnostic
+                </label>
+            </div>
+
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date">
+
+            <label for="problem">Problem Description</label>
+            <textarea id="problem" name="problem"
+                      placeholder="Describe the problem with your device..."></textarea>
+
+            <div class="buttons">
+                <button type="submit">Submit Request</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+
+
+        <h2>Repair Services Table</h2>
+
+        <table>
+
+            <tr>
+                <th>Service</th>
+                <th>Device</th>
+                <th>Estimated Time</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>Screen Repair</td>
+                <td>Smartphone</td>
+                <td>1-2 Hours</td>
+                <td>₱1,500+</td>
+            </tr>
+
+            <tr>
+                <td>Battery Replacement</td>
+                <td>Phone / Laptop</td>
+                <td>1 Hour</td>
+                <td>₱800+</td>
+            </tr>
+
+            <tr>
+                <td>Software Repair</td>
+                <td>Computer</td>
+                <td>2-3 Hours</td>
+                <td>₱500+</td>
+            </tr>
+
+            <tr>
+                <td>Hardware Repair</td>
+                <td>Laptop / Desktop</td>
+                <td>2-4 Hours</td>
+                <td>₱1,000+</td>
+            </tr>
+
+            <tr>
+                <td>Device Cleaning</td>
+                <td>All Devices</td>
+                <td>30 Minutes</td>
+                <td>₱300+</td>
+            </tr>
+
+        </table>
+
+
+        <footer>
+            <p>Technology Repair Services | 2026</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
